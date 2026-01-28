@@ -18,6 +18,7 @@ microrts.jar
 
 # Temporary files and directories
 temp/
+tmp/
 *.tmp
 *.temp
 *.log

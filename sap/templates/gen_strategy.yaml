@@ -122,3 +122,29 @@ TIPS: |
 
 START: |
   Now you are in the **player 0** side. Approach your task step by step.
+
+OBS: |
+  # Battlefield Situation
+  Here is the description of the **current situation**: 
+  {observation}
+
+  You are now **player {player_id}**. Please create a counterstrategy to win the game based on the current situation. Output only the strategy in the specified format, without any extra content.
+
+
+FORMAT_INSTRUCTION: |
+  You must generate a counterstrategy that includes all the features of a Parameterized Strategy. The strategy is wrapped in `<strategy></strategy>`, as shown below:
+  <strategy>
+  - Economic Feature: <VALUE>
+  - Barracks Feature: <VALUE>
+  - Military Feature: <VALUE>
+  - Aggression Feature: <VALUE>
+  - Attack Feature: <VALUE>
+  - Defense Feature: <VALUE>
+  </strategy>
+
+ZERO_SHOT_WO_TIPS: |
+  ${INSTRUCTION}
+  ${MANUAL}
+  ${STRATEGY_SPACE}
+  ${FORMAT_INSTRUCTION}
+  ${OBS}

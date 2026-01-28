@@ -51,6 +51,7 @@ class Planner(Agent):
             "few-shot": "FEW_SHOT",
             "zero-shot-w-strategy": "ZERO_SHOT_W_STRATEGY",
             "few-shot-w-strategy": "FEW_SHOT_W_STRATEGY",
+            "zero-shot-w-strategy-wo-tips": "ZERO_SHOT_W_STRATEGY_WO_TIPS",
             "few-shot-w-strategy-wo-tips": "FEW_SHOT_W_STRATEGY_WO_TIPS",
             "zero-shot-messages": "USER"
         }[self.prompt]
@@ -82,7 +83,7 @@ class Planner(Agent):
             return self.template.format(**kwargs)
         elif self.prompt == "few-shot":
             return self.template.format(examples=self.examples, **kwargs)
-        elif self.prompt in ["zero-shot-w-strategy", "zero-shot-messages"]:
+        elif self.prompt in ["zero-shot-w-strategy", "zero-shot-w-strategy-wo-tips", "zero-shot-messages"]:
             return self.template.format(strategy=self.strategy, **kwargs)
         elif self.prompt == "few-shot-w-strategy" or self.prompt == "few-shot-w-strategy-wo-tips":
             return self.template.format(examples=self.examples, strategy=self.strategy, **kwargs)
@@ -148,6 +149,7 @@ class SAPAgent(Agent):
         self.planner.strategy = self.strategy
     
     def step(self, obs: GameState, traj: Trajectory | None):
+        self.planner.obs = obs
         if obs.time % self.strategy_interval == 0 and traj is not None:
             self.update_strategy(traj)
         return self.planner.step(obs)
@@ -212,6 +214,23 @@ class SAPAgentWithoutSEN(SAPAgent):
         self.strategy = self.client(self.gen_strategy_template.format(opponent=opponent.to_string()))
         logger.info(f"Response strategy: {self.strategy}")
         self.planner.strategy = self.strategy
+
+
+class SAPVanilla(SAPAgent):
+    """LLM 自己生先成策略再生成规划"""
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.gen_strategy_template = OmegaConf.load("sap/templates/gen_strategy.yaml")["ZERO_SHOT_WO_TIPS"]
+    
+    def update_strategy(self, obs: GameState):
+        self.strategy = self.client(self.gen_strategy_template.format(observation=obs.to_string(), player_id=self.player_id))
+        logger.info(f"Response strategy: {self.strategy}")
+        self.planner.strategy = self.strategy
+    
+    def step(self, obs: GameState, traj: Trajectory | None):
+        if obs.time % self.strategy_interval == 0:
+            self.update_strategy(obs)
+        return self.planner.step(obs)
 
 
 class NoGreedyAce(SAPAgent):

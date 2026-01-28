@@ -1,0 +1,1361 @@
+{
+    "strategy1 w/ hints": [
+        {
+            "[Harvest Mineral]": 0.06896551724137931,
+            "[Produce Unit]": 0.27586206896551724,
+            "[Build Building]": 0.034482758620689655,
+            "[Deploy Unit]": 0.0,
+            "[Attack Enemy]": 0.6206896551724138
+        },
+        {
+            "[Harvest Mineral]": 0.06060606060606061,
+            "[Produce Unit]": 0.36363636363636365,
+            "[Build Building]": 0.030303030303030304,
+            "[Deploy Unit]": 0.0,
+            "[Attack Enemy]": 0.5454545454545454
+        },
+        {
+            "[Harvest Mineral]": 0.06896551724137931,
+            "[Produce Unit]": 0.27586206896551724,
+            "[Build Building]": 0.034482758620689655,
+            "[Deploy Unit]": 0.0,
+            "[Attack Enemy]": 0.6206896551724138
+        },
+        {
+            "[Harvest Mineral]": 0.06060606060606061,
+            "[Produce Unit]": 0.36363636363636365,
+            "[Build Building]": 0.030303030303030304,
+            "[Deploy Unit]": 0.0,
+            "[Attack Enemy]": 0.5454545454545454
+        },
+        {
+            "[Harvest Mineral]": 0.06896551724137931,
+            "[Produce Unit]": 0.27586206896551724,
+            "[Build Building]": 0.034482758620689655,
+            "[Deploy Unit]": 0.0,
+            "[Attack Enemy]": 0.6206896551724138
+        },
+        {
+            "[Harvest Mineral]": 0.06060606060606061,
+            "[Produce Unit]": 0.36363636363636365,
+            "[Build Building]": 0.030303030303030304,
+            "[Deploy Unit]": 0.0,
+            "[Attack Enemy]": 0.5454545454545454
+        },
+        {
+            "[Harvest Mineral]": 0.06896551724137931,
+            "[Produce Unit]": 0.27586206896551724,
+            "[Build Building]": 0.034482758620689655,
+            "[Deploy Unit]": 0.0,
+            "[Attack Enemy]": 0.6206896551724138
+        },
+        {
+            "[Harvest Mineral]": 0.06451612903225806,
+            "[Produce Unit]": 0.25806451612903225,
+            "[Build Building]": 0.03225806451612903,
+            "[Deploy Unit]": 0.0,
+            "[Attack Enemy]": 0.6451612903225806
+        },
+        {
+            "[Harvest Mineral]": 0.06451612903225806,
+            "[Produce Unit]": 0.25806451612903225,
+            "[Build Building]": 0.03225806451612903,
+            "[Deploy Unit]": 0.0,
+            "[Attack Enemy]": 0.6451612903225806
+        },
+        {
+            "[Harvest Mineral]": 0.03225806451612903,
+            "[Produce Unit]": 0.25806451612903225,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.0,
+            "[Attack Enemy]": 0.7096774193548387
+        },
+        {
+            "[Harvest Mineral]": 0.0,
+            "[Produce Unit]": 0.5333333333333333,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.0,
+            "[Attack Enemy]": 0.4666666666666667
+        },
+        {
+            "[Harvest Mineral]": 0.058823529411764705,
+            "[Produce Unit]": 0.47058823529411764,
+            "[Build Building]": 0.029411764705882353,
+            "[Deploy Unit]": 0.0,
+            "[Attack Enemy]": 0.4411764705882353
+        },
+        {
+            "[Harvest Mineral]": 0.06896551724137931,
+            "[Produce Unit]": 0.27586206896551724,
+            "[Build Building]": 0.034482758620689655,
+            "[Deploy Unit]": 0.0,
+            "[Attack Enemy]": 0.6206896551724138
+        },
+        {
+            "[Harvest Mineral]": 0.06451612903225806,
+            "[Produce Unit]": 0.25806451612903225,
+            "[Build Building]": 0.03225806451612903,
+            "[Deploy Unit]": 0.0,
+            "[Attack Enemy]": 0.6451612903225806
+        },
+        {
+            "[Harvest Mineral]": 0.06451612903225806,
+            "[Produce Unit]": 0.25806451612903225,
+            "[Build Building]": 0.03225806451612903,
+            "[Deploy Unit]": 0.0,
+            "[Attack Enemy]": 0.6451612903225806
+        },
+        {
+            "[Harvest Mineral]": 0.034482758620689655,
+            "[Produce Unit]": 0.27586206896551724,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.0,
+            "[Attack Enemy]": 0.6896551724137931
+        },
+        {
+            "[Harvest Mineral]": 0.034482758620689655,
+            "[Produce Unit]": 0.27586206896551724,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.0,
+            "[Attack Enemy]": 0.6896551724137931
+        },
+        {
+            "[Harvest Mineral]": 0.06896551724137931,
+            "[Produce Unit]": 0.27586206896551724,
+            "[Build Building]": 0.034482758620689655,
+            "[Deploy Unit]": 0.0,
+            "[Attack Enemy]": 0.6206896551724138
+        },
+        {
+            "[Harvest Mineral]": 0.06896551724137931,
+            "[Produce Unit]": 0.27586206896551724,
+            "[Build Building]": 0.034482758620689655,
+            "[Deploy Unit]": 0.0,
+            "[Attack Enemy]": 0.6206896551724138
+        },
+        {
+            "[Harvest Mineral]": 0.06666666666666667,
+            "[Produce Unit]": 0.5333333333333333,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.0,
+            "[Attack Enemy]": 0.4
+        },
+        {
+            "[Harvest Mineral]": 0.034482758620689655,
+            "[Produce Unit]": 0.5517241379310345,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.0,
+            "[Attack Enemy]": 0.41379310344827586
+        },
+        {
+            "[Harvest Mineral]": 0.03225806451612903,
+            "[Produce Unit]": 0.25806451612903225,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.0,
+            "[Attack Enemy]": 0.7096774193548387
+        },
+        {
+            "[Harvest Mineral]": 0.06896551724137931,
+            "[Produce Unit]": 0.27586206896551724,
+            "[Build Building]": 0.034482758620689655,
+            "[Deploy Unit]": 0.0,
+            "[Attack Enemy]": 0.6206896551724138
+        },
+        {
+            "[Harvest Mineral]": 0.06451612903225806,
+            "[Produce Unit]": 0.25806451612903225,
+            "[Build Building]": 0.03225806451612903,
+            "[Deploy Unit]": 0.0,
+            "[Attack Enemy]": 0.6451612903225806
+        },
+        {
+            "[Harvest Mineral]": 0.03225806451612903,
+            "[Produce Unit]": 0.25806451612903225,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.0,
+            "[Attack Enemy]": 0.7096774193548387
+        },
+        {
+            "[Harvest Mineral]": 0.06666666666666667,
+            "[Produce Unit]": 0.26666666666666666,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.0,
+            "[Attack Enemy]": 0.6666666666666666
+        },
+        {
+            "[Harvest Mineral]": 0.06896551724137931,
+            "[Produce Unit]": 0.27586206896551724,
+            "[Build Building]": 0.034482758620689655,
+            "[Deploy Unit]": 0.0,
+            "[Attack Enemy]": 0.6206896551724138
+        },
+        {
+            "[Harvest Mineral]": 0.06666666666666667,
+            "[Produce Unit]": 0.26666666666666666,
+            "[Build Building]": 0.03333333333333333,
+            "[Deploy Unit]": 0.0,
+            "[Attack Enemy]": 0.6333333333333333
+        },
+        {
+            "[Harvest Mineral]": 0.03225806451612903,
+            "[Produce Unit]": 0.25806451612903225,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.0,
+            "[Attack Enemy]": 0.7096774193548387
+        },
+        {
+            "[Harvest Mineral]": 0.06666666666666667,
+            "[Produce Unit]": 0.26666666666666666,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.0,
+            "[Attack Enemy]": 0.6666666666666666
+        },
+        {
+            "[Harvest Mineral]": 0.06896551724137931,
+            "[Produce Unit]": 0.27586206896551724,
+            "[Build Building]": 0.034482758620689655,
+            "[Deploy Unit]": 0.0,
+            "[Attack Enemy]": 0.6206896551724138
+        },
+        {
+            "[Harvest Mineral]": 0.06666666666666667,
+            "[Produce Unit]": 0.26666666666666666,
+            "[Build Building]": 0.03333333333333333,
+            "[Deploy Unit]": 0.0,
+            "[Attack Enemy]": 0.6333333333333333
+        },
+        {
+            "[Harvest Mineral]": 0.03225806451612903,
+            "[Produce Unit]": 0.25806451612903225,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.0,
+            "[Attack Enemy]": 0.7096774193548387
+        },
+        {
+            "[Harvest Mineral]": 0.06666666666666667,
+            "[Produce Unit]": 0.26666666666666666,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.0,
+            "[Attack Enemy]": 0.6666666666666666
+        }
+    ],
+    "strategy1 w/o hints": [
+        {
+            "[Harvest Mineral]": 0.06451612903225806,
+            "[Produce Unit]": 0.3870967741935484,
+            "[Build Building]": 0.03225806451612903,
+            "[Deploy Unit]": 0.3225806451612903,
+            "[Attack Enemy]": 0.1935483870967742
+        },
+        {
+            "[Harvest Mineral]": 0.1724137931034483,
+            "[Produce Unit]": 0.27586206896551724,
+            "[Build Building]": 0.034482758620689655,
+            "[Deploy Unit]": 0.2413793103448276,
+            "[Attack Enemy]": 0.27586206896551724
+        },
+        {
+            "[Harvest Mineral]": 0.06451612903225806,
+            "[Produce Unit]": 0.3870967741935484,
+            "[Build Building]": 0.03225806451612903,
+            "[Deploy Unit]": 0.3225806451612903,
+            "[Attack Enemy]": 0.1935483870967742
+        },
+        {
+            "[Harvest Mineral]": 0.1724137931034483,
+            "[Produce Unit]": 0.27586206896551724,
+            "[Build Building]": 0.034482758620689655,
+            "[Deploy Unit]": 0.2413793103448276,
+            "[Attack Enemy]": 0.27586206896551724
+        },
+        {
+            "[Harvest Mineral]": 0.06896551724137931,
+            "[Produce Unit]": 0.3793103448275862,
+            "[Build Building]": 0.034482758620689655,
+            "[Deploy Unit]": 0.3103448275862069,
+            "[Attack Enemy]": 0.20689655172413793
+        },
+        {
+            "[Harvest Mineral]": 0.1724137931034483,
+            "[Produce Unit]": 0.27586206896551724,
+            "[Build Building]": 0.034482758620689655,
+            "[Deploy Unit]": 0.2413793103448276,
+            "[Attack Enemy]": 0.27586206896551724
+        },
+        {
+            "[Harvest Mineral]": 0.06451612903225806,
+            "[Produce Unit]": 0.3870967741935484,
+            "[Build Building]": 0.03225806451612903,
+            "[Deploy Unit]": 0.3225806451612903,
+            "[Attack Enemy]": 0.1935483870967742
+        },
+        {
+            "[Harvest Mineral]": 0.06666666666666667,
+            "[Produce Unit]": 0.3,
+            "[Build Building]": 0.03333333333333333,
+            "[Deploy Unit]": 0.3,
+            "[Attack Enemy]": 0.3
+        },
+        {
+            "[Harvest Mineral]": 0.07142857142857142,
+            "[Produce Unit]": 0.35714285714285715,
+            "[Build Building]": 0.03571428571428571,
+            "[Deploy Unit]": 0.35714285714285715,
+            "[Attack Enemy]": 0.17857142857142858
+        },
+        {
+            "[Harvest Mineral]": 0.06896551724137931,
+            "[Produce Unit]": 0.3103448275862069,
+            "[Build Building]": 0.034482758620689655,
+            "[Deploy Unit]": 0.3103448275862069,
+            "[Attack Enemy]": 0.27586206896551724
+        },
+        {
+            "[Harvest Mineral]": 0.21212121212121213,
+            "[Produce Unit]": 0.24242424242424243,
+            "[Build Building]": 0.030303030303030304,
+            "[Deploy Unit]": 0.3333333333333333,
+            "[Attack Enemy]": 0.18181818181818182
+        },
+        {
+            "[Harvest Mineral]": 0.07142857142857142,
+            "[Produce Unit]": 0.32142857142857145,
+            "[Build Building]": 0.03571428571428571,
+            "[Deploy Unit]": 0.2857142857142857,
+            "[Attack Enemy]": 0.2857142857142857
+        },
+        {
+            "[Harvest Mineral]": 0.0,
+            "[Produce Unit]": 0.3333333333333333,
+            "[Build Building]": 0.03333333333333333,
+            "[Deploy Unit]": 0.3333333333333333,
+            "[Attack Enemy]": 0.3
+        },
+        {
+            "[Harvest Mineral]": 0.0,
+            "[Produce Unit]": 0.3333333333333333,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.3333333333333333,
+            "[Attack Enemy]": 0.3333333333333333
+        },
+        {
+            "[Harvest Mineral]": 0.0,
+            "[Produce Unit]": 0.4,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.4,
+            "[Attack Enemy]": 0.2
+        },
+        {
+            "[Harvest Mineral]": 0.0,
+            "[Produce Unit]": 0.39285714285714285,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.39285714285714285,
+            "[Attack Enemy]": 0.21428571428571427
+        },
+        {
+            "[Harvest Mineral]": 0.06451612903225806,
+            "[Produce Unit]": 0.3870967741935484,
+            "[Build Building]": 0.03225806451612903,
+            "[Deploy Unit]": 0.3225806451612903,
+            "[Attack Enemy]": 0.1935483870967742
+        },
+        {
+            "[Harvest Mineral]": 0.06666666666666667,
+            "[Produce Unit]": 0.3,
+            "[Build Building]": 0.03333333333333333,
+            "[Deploy Unit]": 0.3,
+            "[Attack Enemy]": 0.3
+        },
+        {
+            "[Harvest Mineral]": 0.1724137931034483,
+            "[Produce Unit]": 0.27586206896551724,
+            "[Build Building]": 0.034482758620689655,
+            "[Deploy Unit]": 0.20689655172413793,
+            "[Attack Enemy]": 0.3103448275862069
+        },
+        {
+            "[Harvest Mineral]": 0.06896551724137931,
+            "[Produce Unit]": 0.3448275862068966,
+            "[Build Building]": 0.034482758620689655,
+            "[Deploy Unit]": 0.27586206896551724,
+            "[Attack Enemy]": 0.27586206896551724
+        },
+        {
+            "[Harvest Mineral]": 0.1935483870967742,
+            "[Produce Unit]": 0.3225806451612903,
+            "[Build Building]": 0.03225806451612903,
+            "[Deploy Unit]": 0.2903225806451613,
+            "[Attack Enemy]": 0.16129032258064516
+        },
+        {
+            "[Harvest Mineral]": 0.07142857142857142,
+            "[Produce Unit]": 0.2857142857142857,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.21428571428571427,
+            "[Attack Enemy]": 0.42857142857142855
+        },
+        {
+            "[Harvest Mineral]": 0.06666666666666667,
+            "[Produce Unit]": 0.26666666666666666,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.26666666666666666,
+            "[Attack Enemy]": 0.4
+        },
+        {
+            "[Harvest Mineral]": 0.0,
+            "[Produce Unit]": 0.22580645161290322,
+            "[Build Building]": 0.03225806451612903,
+            "[Deploy Unit]": 0.22580645161290322,
+            "[Attack Enemy]": 0.5161290322580645
+        },
+        {
+            "[Harvest Mineral]": 0.0,
+            "[Produce Unit]": 0.3448275862068966,
+            "[Build Building]": 0.034482758620689655,
+            "[Deploy Unit]": 0.3448275862068966,
+            "[Attack Enemy]": 0.27586206896551724
+        },
+        {
+            "[Harvest Mineral]": 0.0,
+            "[Produce Unit]": 0.27586206896551724,
+            "[Build Building]": 0.034482758620689655,
+            "[Deploy Unit]": 0.27586206896551724,
+            "[Attack Enemy]": 0.41379310344827586
+        },
+        {
+            "[Harvest Mineral]": 0.06896551724137931,
+            "[Produce Unit]": 0.3793103448275862,
+            "[Build Building]": 0.034482758620689655,
+            "[Deploy Unit]": 0.3103448275862069,
+            "[Attack Enemy]": 0.20689655172413793
+        },
+        {
+            "[Harvest Mineral]": 0.07142857142857142,
+            "[Produce Unit]": 0.32142857142857145,
+            "[Build Building]": 0.03571428571428571,
+            "[Deploy Unit]": 0.2857142857142857,
+            "[Attack Enemy]": 0.2857142857142857
+        },
+        {
+            "[Harvest Mineral]": 0.07142857142857142,
+            "[Produce Unit]": 0.32142857142857145,
+            "[Build Building]": 0.03571428571428571,
+            "[Deploy Unit]": 0.2857142857142857,
+            "[Attack Enemy]": 0.2857142857142857
+        },
+        {
+            "[Harvest Mineral]": 0.07142857142857142,
+            "[Produce Unit]": 0.25,
+            "[Build Building]": 0.03571428571428571,
+            "[Deploy Unit]": 0.32142857142857145,
+            "[Attack Enemy]": 0.32142857142857145
+        },
+        {
+            "[Harvest Mineral]": 0.07142857142857142,
+            "[Produce Unit]": 0.32142857142857145,
+            "[Build Building]": 0.03571428571428571,
+            "[Deploy Unit]": 0.2857142857142857,
+            "[Attack Enemy]": 0.2857142857142857
+        },
+        {
+            "[Harvest Mineral]": 0.07142857142857142,
+            "[Produce Unit]": 0.32142857142857145,
+            "[Build Building]": 0.03571428571428571,
+            "[Deploy Unit]": 0.2857142857142857,
+            "[Attack Enemy]": 0.2857142857142857
+        },
+        {
+            "[Harvest Mineral]": 0.06451612903225806,
+            "[Produce Unit]": 0.3870967741935484,
+            "[Build Building]": 0.03225806451612903,
+            "[Deploy Unit]": 0.3225806451612903,
+            "[Attack Enemy]": 0.1935483870967742
+        },
+        {
+            "[Harvest Mineral]": 0.07142857142857142,
+            "[Produce Unit]": 0.14285714285714285,
+            "[Build Building]": 0.03571428571428571,
+            "[Deploy Unit]": 0.10714285714285714,
+            "[Attack Enemy]": 0.6428571428571429
+        },
+        {
+            "[Harvest Mineral]": 0.06451612903225806,
+            "[Produce Unit]": 0.3870967741935484,
+            "[Build Building]": 0.03225806451612903,
+            "[Deploy Unit]": 0.3225806451612903,
+            "[Attack Enemy]": 0.1935483870967742
+        },
+        {
+            "[Harvest Mineral]": 0.07142857142857142,
+            "[Produce Unit]": 0.32142857142857145,
+            "[Build Building]": 0.03571428571428571,
+            "[Deploy Unit]": 0.2857142857142857,
+            "[Attack Enemy]": 0.2857142857142857
+        },
+        {
+            "[Harvest Mineral]": 0.06451612903225806,
+            "[Produce Unit]": 0.3870967741935484,
+            "[Build Building]": 0.03225806451612903,
+            "[Deploy Unit]": 0.3225806451612903,
+            "[Attack Enemy]": 0.1935483870967742
+        },
+        {
+            "[Harvest Mineral]": 0.07142857142857142,
+            "[Produce Unit]": 0.32142857142857145,
+            "[Build Building]": 0.03571428571428571,
+            "[Deploy Unit]": 0.2857142857142857,
+            "[Attack Enemy]": 0.2857142857142857
+        }
+    ],
+    "strategy2 w/ hints": [
+        {
+            "[Harvest Mineral]": 0.3333333333333333,
+            "[Produce Unit]": 0.3333333333333333,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.3333333333333333,
+            "[Attack Enemy]": 0.0
+        },
+        {
+            "[Harvest Mineral]": 0.038461538461538464,
+            "[Produce Unit]": 0.38461538461538464,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.5769230769230769,
+            "[Attack Enemy]": 0.0
+        },
+        {
+            "[Harvest Mineral]": 0.037037037037037035,
+            "[Produce Unit]": 0.37037037037037035,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.5925925925925926,
+            "[Attack Enemy]": 0.0
+        },
+        {
+            "[Harvest Mineral]": 0.03571428571428571,
+            "[Produce Unit]": 0.2857142857142857,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.6785714285714286,
+            "[Attack Enemy]": 0.0
+        },
+        {
+            "[Harvest Mineral]": 0.038461538461538464,
+            "[Produce Unit]": 0.23076923076923078,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.7307692307692307,
+            "[Attack Enemy]": 0.0
+        },
+        {
+            "[Harvest Mineral]": 0.3333333333333333,
+            "[Produce Unit]": 0.3333333333333333,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.3333333333333333,
+            "[Attack Enemy]": 0.0
+        },
+        {
+            "[Harvest Mineral]": 0.037037037037037035,
+            "[Produce Unit]": 0.4444444444444444,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.5185185185185185,
+            "[Attack Enemy]": 0.0
+        },
+        {
+            "[Harvest Mineral]": 0.037037037037037035,
+            "[Produce Unit]": 0.37037037037037035,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.5925925925925926,
+            "[Attack Enemy]": 0.0
+        },
+        {
+            "[Harvest Mineral]": 0.03571428571428571,
+            "[Produce Unit]": 0.2857142857142857,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.6785714285714286,
+            "[Attack Enemy]": 0.0
+        },
+        {
+            "[Harvest Mineral]": 0.3333333333333333,
+            "[Produce Unit]": 0.3333333333333333,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.3333333333333333,
+            "[Attack Enemy]": 0.0
+        },
+        {
+            "[Harvest Mineral]": 0.037037037037037035,
+            "[Produce Unit]": 0.4444444444444444,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.5185185185185185,
+            "[Attack Enemy]": 0.0
+        },
+        {
+            "[Harvest Mineral]": 0.037037037037037035,
+            "[Produce Unit]": 0.37037037037037035,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.5925925925925926,
+            "[Attack Enemy]": 0.0
+        },
+        {
+            "[Harvest Mineral]": 0.03571428571428571,
+            "[Produce Unit]": 0.2857142857142857,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.6785714285714286,
+            "[Attack Enemy]": 0.0
+        },
+        {
+            "[Harvest Mineral]": 0.038461538461538464,
+            "[Produce Unit]": 0.23076923076923078,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.7307692307692307,
+            "[Attack Enemy]": 0.0
+        },
+        {
+            "[Harvest Mineral]": 0.3333333333333333,
+            "[Produce Unit]": 0.3333333333333333,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.3333333333333333,
+            "[Attack Enemy]": 0.0
+        },
+        {
+            "[Harvest Mineral]": 0.034482758620689655,
+            "[Produce Unit]": 0.2413793103448276,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.7241379310344828,
+            "[Attack Enemy]": 0.0
+        },
+        {
+            "[Harvest Mineral]": 0.037037037037037035,
+            "[Produce Unit]": 0.4074074074074074,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.5555555555555556,
+            "[Attack Enemy]": 0.0
+        },
+        {
+            "[Harvest Mineral]": 0.04,
+            "[Produce Unit]": 0.08,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.88,
+            "[Attack Enemy]": 0.0
+        },
+        {
+            "[Harvest Mineral]": 0.04,
+            "[Produce Unit]": 0.2,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.76,
+            "[Attack Enemy]": 0.0
+        },
+        {
+            "[Harvest Mineral]": 0.07142857142857142,
+            "[Produce Unit]": 0.4642857142857143,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.4642857142857143,
+            "[Attack Enemy]": 0.0
+        },
+        {
+            "[Harvest Mineral]": 0.037037037037037035,
+            "[Produce Unit]": 0.1111111111111111,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.8518518518518519,
+            "[Attack Enemy]": 0.0
+        },
+        {
+            "[Harvest Mineral]": 0.03571428571428571,
+            "[Produce Unit]": 0.2857142857142857,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.6785714285714286,
+            "[Attack Enemy]": 0.0
+        },
+        {
+            "[Harvest Mineral]": 0.03571428571428571,
+            "[Produce Unit]": 0.2857142857142857,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.6785714285714286,
+            "[Attack Enemy]": 0.0
+        },
+        {
+            "[Harvest Mineral]": 0.03571428571428571,
+            "[Produce Unit]": 0.35714285714285715,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.6071428571428571,
+            "[Attack Enemy]": 0.0
+        },
+        {
+            "[Harvest Mineral]": 0.3333333333333333,
+            "[Produce Unit]": 0.3333333333333333,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.3333333333333333,
+            "[Attack Enemy]": 0.0
+        },
+        {
+            "[Harvest Mineral]": 0.3333333333333333,
+            "[Produce Unit]": 0.3333333333333333,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.3333333333333333,
+            "[Attack Enemy]": 0.0
+        },
+        {
+            "[Harvest Mineral]": 0.25,
+            "[Produce Unit]": 0.25,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.5,
+            "[Attack Enemy]": 0.0
+        },
+        {
+            "[Harvest Mineral]": 0.03571428571428571,
+            "[Produce Unit]": 0.35714285714285715,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.6071428571428571,
+            "[Attack Enemy]": 0.0
+        },
+        {
+            "[Harvest Mineral]": 0.041666666666666664,
+            "[Produce Unit]": 0.125,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.75,
+            "[Attack Enemy]": 0.08333333333333333
+        },
+        {
+            "[Harvest Mineral]": 0.3333333333333333,
+            "[Produce Unit]": 0.3333333333333333,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.3333333333333333,
+            "[Attack Enemy]": 0.0
+        },
+        {
+            "[Harvest Mineral]": 0.037037037037037035,
+            "[Produce Unit]": 0.4444444444444444,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.5185185185185185,
+            "[Attack Enemy]": 0.0
+        },
+        {
+            "[Harvest Mineral]": 0.038461538461538464,
+            "[Produce Unit]": 0.38461538461538464,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.5769230769230769,
+            "[Attack Enemy]": 0.0
+        },
+        {
+            "[Harvest Mineral]": 0.3333333333333333,
+            "[Produce Unit]": 0.3333333333333333,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.3333333333333333,
+            "[Attack Enemy]": 0.0
+        },
+        {
+            "[Harvest Mineral]": 0.04,
+            "[Produce Unit]": 0.0,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.96,
+            "[Attack Enemy]": 0.0
+        },
+        {
+            "[Harvest Mineral]": 0.04,
+            "[Produce Unit]": 0.0,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.96,
+            "[Attack Enemy]": 0.0
+        },
+        {
+            "[Harvest Mineral]": 0.04,
+            "[Produce Unit]": 0.04,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.92,
+            "[Attack Enemy]": 0.0
+        },
+        {
+            "[Harvest Mineral]": 0.3333333333333333,
+            "[Produce Unit]": 0.3333333333333333,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.3333333333333333,
+            "[Attack Enemy]": 0.0
+        },
+        {
+            "[Harvest Mineral]": 0.037037037037037035,
+            "[Produce Unit]": 0.4444444444444444,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.5185185185185185,
+            "[Attack Enemy]": 0.0
+        },
+        {
+            "[Harvest Mineral]": 0.03571428571428571,
+            "[Produce Unit]": 0.35714285714285715,
+            "[Build Building]": 0.03571428571428571,
+            "[Deploy Unit]": 0.5714285714285714,
+            "[Attack Enemy]": 0.0
+        },
+        {
+            "[Harvest Mineral]": 0.04,
+            "[Produce Unit]": 0.04,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.92,
+            "[Attack Enemy]": 0.0
+        },
+        {
+            "[Harvest Mineral]": 0.04,
+            "[Produce Unit]": 0.0,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.96,
+            "[Attack Enemy]": 0.0
+        },
+        {
+            "[Harvest Mineral]": 0.03571428571428571,
+            "[Produce Unit]": 0.2857142857142857,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.6785714285714286,
+            "[Attack Enemy]": 0.0
+        },
+        {
+            "[Harvest Mineral]": 0.3333333333333333,
+            "[Produce Unit]": 0.3333333333333333,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.3333333333333333,
+            "[Attack Enemy]": 0.0
+        },
+        {
+            "[Harvest Mineral]": 0.04,
+            "[Produce Unit]": 0.04,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.92,
+            "[Attack Enemy]": 0.0
+        },
+        {
+            "[Harvest Mineral]": 0.3333333333333333,
+            "[Produce Unit]": 0.3333333333333333,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.3333333333333333,
+            "[Attack Enemy]": 0.0
+        },
+        {
+            "[Harvest Mineral]": 0.037037037037037035,
+            "[Produce Unit]": 0.4444444444444444,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.5185185185185185,
+            "[Attack Enemy]": 0.0
+        },
+        {
+            "[Harvest Mineral]": 0.037037037037037035,
+            "[Produce Unit]": 0.37037037037037035,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.5925925925925926,
+            "[Attack Enemy]": 0.0
+        },
+        {
+            "[Harvest Mineral]": 0.03571428571428571,
+            "[Produce Unit]": 0.32142857142857145,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.6428571428571429,
+            "[Attack Enemy]": 0.0
+        },
+        {
+            "[Harvest Mineral]": 0.037037037037037035,
+            "[Produce Unit]": 0.37037037037037035,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.5925925925925926,
+            "[Attack Enemy]": 0.0
+        },
+        {
+            "[Harvest Mineral]": 0.03571428571428571,
+            "[Produce Unit]": 0.32142857142857145,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.6428571428571429,
+            "[Attack Enemy]": 0.0
+        },
+        {
+            "[Harvest Mineral]": 0.038461538461538464,
+            "[Produce Unit]": 0.19230769230769232,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.7692307692307693,
+            "[Attack Enemy]": 0.0
+        },
+        {
+            "[Harvest Mineral]": 0.038461538461538464,
+            "[Produce Unit]": 0.19230769230769232,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.7692307692307693,
+            "[Attack Enemy]": 0.0
+        },
+        {
+            "[Harvest Mineral]": 0.03571428571428571,
+            "[Produce Unit]": 0.32142857142857145,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.6428571428571429,
+            "[Attack Enemy]": 0.0
+        },
+        {
+            "[Harvest Mineral]": 0.03571428571428571,
+            "[Produce Unit]": 0.32142857142857145,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.6428571428571429,
+            "[Attack Enemy]": 0.0
+        },
+        {
+            "[Harvest Mineral]": 0.3333333333333333,
+            "[Produce Unit]": 0.3333333333333333,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.3333333333333333,
+            "[Attack Enemy]": 0.0
+        },
+        {
+            "[Harvest Mineral]": 0.037037037037037035,
+            "[Produce Unit]": 0.4444444444444444,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.5185185185185185,
+            "[Attack Enemy]": 0.0
+        },
+        {
+            "[Harvest Mineral]": 0.037037037037037035,
+            "[Produce Unit]": 0.37037037037037035,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.5925925925925926,
+            "[Attack Enemy]": 0.0
+        },
+        {
+            "[Harvest Mineral]": 0.03571428571428571,
+            "[Produce Unit]": 0.32142857142857145,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.6428571428571429,
+            "[Attack Enemy]": 0.0
+        },
+        {
+            "[Harvest Mineral]": 0.034482758620689655,
+            "[Produce Unit]": 0.4827586206896552,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.4827586206896552,
+            "[Attack Enemy]": 0.0
+        },
+        {
+            "[Harvest Mineral]": 0.037037037037037035,
+            "[Produce Unit]": 0.037037037037037035,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.9259259259259259,
+            "[Attack Enemy]": 0.0
+        },
+        {
+            "[Harvest Mineral]": 0.03571428571428571,
+            "[Produce Unit]": 0.03571428571428571,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.9285714285714286,
+            "[Attack Enemy]": 0.0
+        },
+        {
+            "[Harvest Mineral]": 0.038461538461538464,
+            "[Produce Unit]": 0.038461538461538464,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.9230769230769231,
+            "[Attack Enemy]": 0.0
+        },
+        {
+            "[Harvest Mineral]": 0.038461538461538464,
+            "[Produce Unit]": 0.038461538461538464,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.9230769230769231,
+            "[Attack Enemy]": 0.0
+        },
+        {
+            "[Harvest Mineral]": 0.0,
+            "[Produce Unit]": 0.5,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.5,
+            "[Attack Enemy]": 0.0
+        }
+    ],
+    "strategy2 w/o hints": [
+        {
+            "[Harvest Mineral]": 0.037037037037037035,
+            "[Produce Unit]": 0.2222222222222222,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.2962962962962963,
+            "[Attack Enemy]": 0.4444444444444444
+        },
+        {
+            "[Harvest Mineral]": 0.037037037037037035,
+            "[Produce Unit]": 0.14814814814814814,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.14814814814814814,
+            "[Attack Enemy]": 0.6666666666666666
+        },
+        {
+            "[Harvest Mineral]": 0.037037037037037035,
+            "[Produce Unit]": 0.2222222222222222,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.2962962962962963,
+            "[Attack Enemy]": 0.4444444444444444
+        },
+        {
+            "[Harvest Mineral]": 0.034482758620689655,
+            "[Produce Unit]": 0.27586206896551724,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.41379310344827586,
+            "[Attack Enemy]": 0.27586206896551724
+        },
+        {
+            "[Harvest Mineral]": 0.03571428571428571,
+            "[Produce Unit]": 0.14285714285714285,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.14285714285714285,
+            "[Attack Enemy]": 0.6785714285714286
+        },
+        {
+            "[Harvest Mineral]": 0.037037037037037035,
+            "[Produce Unit]": 0.2222222222222222,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.2962962962962963,
+            "[Attack Enemy]": 0.4444444444444444
+        },
+        {
+            "[Harvest Mineral]": 0.03571428571428571,
+            "[Produce Unit]": 0.14285714285714285,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.14285714285714285,
+            "[Attack Enemy]": 0.6785714285714286
+        },
+        {
+            "[Harvest Mineral]": 0.037037037037037035,
+            "[Produce Unit]": 0.2222222222222222,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.2962962962962963,
+            "[Attack Enemy]": 0.4444444444444444
+        },
+        {
+            "[Harvest Mineral]": 0.034482758620689655,
+            "[Produce Unit]": 0.27586206896551724,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.41379310344827586,
+            "[Attack Enemy]": 0.27586206896551724
+        },
+        {
+            "[Harvest Mineral]": 0.06666666666666667,
+            "[Produce Unit]": 0.26666666666666666,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.4,
+            "[Attack Enemy]": 0.26666666666666666
+        },
+        {
+            "[Harvest Mineral]": 0.037037037037037035,
+            "[Produce Unit]": 0.2222222222222222,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.2962962962962963,
+            "[Attack Enemy]": 0.4444444444444444
+        },
+        {
+            "[Harvest Mineral]": 0.03571428571428571,
+            "[Produce Unit]": 0.14285714285714285,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.14285714285714285,
+            "[Attack Enemy]": 0.6785714285714286
+        },
+        {
+            "[Harvest Mineral]": 0.037037037037037035,
+            "[Produce Unit]": 0.2222222222222222,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.2962962962962963,
+            "[Attack Enemy]": 0.4444444444444444
+        },
+        {
+            "[Harvest Mineral]": 0.034482758620689655,
+            "[Produce Unit]": 0.27586206896551724,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.41379310344827586,
+            "[Attack Enemy]": 0.27586206896551724
+        },
+        {
+            "[Harvest Mineral]": 0.03571428571428571,
+            "[Produce Unit]": 0.14285714285714285,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.14285714285714285,
+            "[Attack Enemy]": 0.6785714285714286
+        },
+        {
+            "[Harvest Mineral]": 0.037037037037037035,
+            "[Produce Unit]": 0.2222222222222222,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.2962962962962963,
+            "[Attack Enemy]": 0.4444444444444444
+        },
+        {
+            "[Harvest Mineral]": 0.034482758620689655,
+            "[Produce Unit]": 0.27586206896551724,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.41379310344827586,
+            "[Attack Enemy]": 0.27586206896551724
+        },
+        {
+            "[Harvest Mineral]": 0.034482758620689655,
+            "[Produce Unit]": 0.27586206896551724,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.41379310344827586,
+            "[Attack Enemy]": 0.27586206896551724
+        },
+        {
+            "[Harvest Mineral]": 0.029411764705882353,
+            "[Produce Unit]": 0.17647058823529413,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.35294117647058826,
+            "[Attack Enemy]": 0.4411764705882353
+        },
+        {
+            "[Harvest Mineral]": 0.03333333333333333,
+            "[Produce Unit]": 0.06666666666666667,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.23333333333333334,
+            "[Attack Enemy]": 0.6666666666666666
+        },
+        {
+            "[Harvest Mineral]": 0.034482758620689655,
+            "[Produce Unit]": 0.27586206896551724,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.5517241379310345,
+            "[Attack Enemy]": 0.13793103448275862
+        },
+        {
+            "[Harvest Mineral]": 0.034482758620689655,
+            "[Produce Unit]": 0.06896551724137931,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.20689655172413793,
+            "[Attack Enemy]": 0.6896551724137931
+        },
+        {
+            "[Harvest Mineral]": 0.037037037037037035,
+            "[Produce Unit]": 0.2222222222222222,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.2962962962962963,
+            "[Attack Enemy]": 0.4444444444444444
+        },
+        {
+            "[Harvest Mineral]": 0.034482758620689655,
+            "[Produce Unit]": 0.27586206896551724,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.41379310344827586,
+            "[Attack Enemy]": 0.27586206896551724
+        },
+        {
+            "[Harvest Mineral]": 0.034482758620689655,
+            "[Produce Unit]": 0.27586206896551724,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.41379310344827586,
+            "[Attack Enemy]": 0.27586206896551724
+        },
+        {
+            "[Harvest Mineral]": 0.034482758620689655,
+            "[Produce Unit]": 0.20689655172413793,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.41379310344827586,
+            "[Attack Enemy]": 0.3448275862068966
+        },
+        {
+            "[Harvest Mineral]": 0.03333333333333333,
+            "[Produce Unit]": 0.06666666666666667,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.23333333333333334,
+            "[Attack Enemy]": 0.6666666666666666
+        },
+        {
+            "[Harvest Mineral]": 0.034482758620689655,
+            "[Produce Unit]": 0.20689655172413793,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.41379310344827586,
+            "[Attack Enemy]": 0.3448275862068966
+        },
+        {
+            "[Harvest Mineral]": 0.034482758620689655,
+            "[Produce Unit]": 0.06896551724137931,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.20689655172413793,
+            "[Attack Enemy]": 0.6896551724137931
+        },
+        {
+            "[Harvest Mineral]": 0.037037037037037035,
+            "[Produce Unit]": 0.2222222222222222,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.2962962962962963,
+            "[Attack Enemy]": 0.4444444444444444
+        },
+        {
+            "[Harvest Mineral]": 0.03333333333333333,
+            "[Produce Unit]": 0.26666666666666666,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.4,
+            "[Attack Enemy]": 0.3
+        },
+        {
+            "[Harvest Mineral]": 0.03571428571428571,
+            "[Produce Unit]": 0.35714285714285715,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.5357142857142857,
+            "[Attack Enemy]": 0.07142857142857142
+        },
+        {
+            "[Harvest Mineral]": 0.034482758620689655,
+            "[Produce Unit]": 0.20689655172413793,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.41379310344827586,
+            "[Attack Enemy]": 0.3448275862068966
+        },
+        {
+            "[Harvest Mineral]": 0.03333333333333333,
+            "[Produce Unit]": 0.2,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.5,
+            "[Attack Enemy]": 0.26666666666666666
+        },
+        {
+            "[Harvest Mineral]": 0.03125,
+            "[Produce Unit]": 0.125,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.375,
+            "[Attack Enemy]": 0.46875
+        },
+        {
+            "[Harvest Mineral]": 0.0,
+            "[Produce Unit]": 0.07692307692307693,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.15384615384615385,
+            "[Attack Enemy]": 0.7692307692307693
+        },
+        {
+            "[Harvest Mineral]": 0.0,
+            "[Produce Unit]": 0.07142857142857142,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.5357142857142857,
+            "[Attack Enemy]": 0.39285714285714285
+        },
+        {
+            "[Harvest Mineral]": 0.037037037037037035,
+            "[Produce Unit]": 0.2222222222222222,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.2962962962962963,
+            "[Attack Enemy]": 0.4444444444444444
+        },
+        {
+            "[Harvest Mineral]": 0.03571428571428571,
+            "[Produce Unit]": 0.14285714285714285,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.14285714285714285,
+            "[Attack Enemy]": 0.6785714285714286
+        },
+        {
+            "[Harvest Mineral]": 0.034482758620689655,
+            "[Produce Unit]": 0.13793103448275862,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.1724137931034483,
+            "[Attack Enemy]": 0.6551724137931034
+        },
+        {
+            "[Harvest Mineral]": 0.038461538461538464,
+            "[Produce Unit]": 0.15384615384615385,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.23076923076923078,
+            "[Attack Enemy]": 0.5769230769230769
+        },
+        {
+            "[Harvest Mineral]": 0.034482758620689655,
+            "[Produce Unit]": 0.13793103448275862,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.5517241379310345,
+            "[Attack Enemy]": 0.27586206896551724
+        },
+        {
+            "[Harvest Mineral]": 0.03333333333333333,
+            "[Produce Unit]": 0.06666666666666667,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.23333333333333334,
+            "[Attack Enemy]": 0.6666666666666666
+        },
+        {
+            "[Harvest Mineral]": 0.037037037037037035,
+            "[Produce Unit]": 0.2222222222222222,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.2962962962962963,
+            "[Attack Enemy]": 0.4444444444444444
+        },
+        {
+            "[Harvest Mineral]": 0.037037037037037035,
+            "[Produce Unit]": 0.14814814814814814,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.14814814814814814,
+            "[Attack Enemy]": 0.6666666666666666
+        },
+        {
+            "[Harvest Mineral]": 0.034482758620689655,
+            "[Produce Unit]": 0.13793103448275862,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.1724137931034483,
+            "[Attack Enemy]": 0.6551724137931034
+        },
+        {
+            "[Harvest Mineral]": 0.038461538461538464,
+            "[Produce Unit]": 0.15384615384615385,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.23076923076923078,
+            "[Attack Enemy]": 0.5769230769230769
+        },
+        {
+            "[Harvest Mineral]": 0.034482758620689655,
+            "[Produce Unit]": 0.13793103448275862,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.5517241379310345,
+            "[Attack Enemy]": 0.27586206896551724
+        },
+        {
+            "[Harvest Mineral]": 0.03333333333333333,
+            "[Produce Unit]": 0.06666666666666667,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.23333333333333334,
+            "[Attack Enemy]": 0.6666666666666666
+        },
+        {
+            "[Harvest Mineral]": 0.037037037037037035,
+            "[Produce Unit]": 0.07407407407407407,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.3333333333333333,
+            "[Attack Enemy]": 0.5555555555555556
+        },
+        {
+            "[Harvest Mineral]": 0.037037037037037035,
+            "[Produce Unit]": 0.2222222222222222,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.2962962962962963,
+            "[Attack Enemy]": 0.4444444444444444
+        },
+        {
+            "[Harvest Mineral]": 0.03571428571428571,
+            "[Produce Unit]": 0.14285714285714285,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.14285714285714285,
+            "[Attack Enemy]": 0.6785714285714286
+        },
+        {
+            "[Harvest Mineral]": 0.034482758620689655,
+            "[Produce Unit]": 0.13793103448275862,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.1724137931034483,
+            "[Attack Enemy]": 0.6551724137931034
+        },
+        {
+            "[Harvest Mineral]": 0.038461538461538464,
+            "[Produce Unit]": 0.15384615384615385,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.23076923076923078,
+            "[Attack Enemy]": 0.5769230769230769
+        },
+        {
+            "[Harvest Mineral]": 0.034482758620689655,
+            "[Produce Unit]": 0.13793103448275862,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.5517241379310345,
+            "[Attack Enemy]": 0.27586206896551724
+        },
+        {
+            "[Harvest Mineral]": 0.03333333333333333,
+            "[Produce Unit]": 0.06666666666666667,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.23333333333333334,
+            "[Attack Enemy]": 0.6666666666666666
+        },
+        {
+            "[Harvest Mineral]": 0.037037037037037035,
+            "[Produce Unit]": 0.07407407407407407,
+            "[Build Building]": 0.0,
+            "[Deploy Unit]": 0.3333333333333333,
+            "[Attack Enemy]": 0.5555555555555556
+        }
+    ]
+}

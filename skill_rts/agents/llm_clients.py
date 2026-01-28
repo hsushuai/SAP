@@ -1,6 +1,4 @@
 from abc import ABC
-from email import header
-from operator import call
 from skill_rts import logger
 from openai import OpenAI
 from zhipuai import ZhipuAI
@@ -61,10 +59,10 @@ class SapAgent(LLM):
 class Qwen(LLM):
     def __init__(self, model, temperature, max_tokens):
         super().__init__(model, temperature, max_tokens)
-        if "qwen" in model:  # deploy on localhost
-            self.client = OpenAI(base_url="http://172.18.36.55:11434/v1", api_key="")
+        if model == "Qwen2.5-72B-Instruct":
+            self.client = OpenAI(base_url="http://10.7.0.210:8010/v1", api_key="")
         else:
-            self.client = OpenAI(base_url=os.getenv("QWEN_API_BASE"), api_key=os.getenv("QWEN_API_KEY"))
+            self.client = OpenAI(base_url="http://10.7.0.210:8020/v1", api_key="")
 
 
 class GLM(LLM):
@@ -158,5 +156,5 @@ def call_llm(
 
 
 if __name__ == "__main__":
-    llm = LLMs("sap_distill")
-    print(llm("who are you"))
+    llm = LLMs("Qwen2.5-72B-Instruct", max_tokens=4096)
+    print(llm("你是谁"))
