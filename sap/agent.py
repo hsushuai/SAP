@@ -10,6 +10,7 @@ from sap.traj_feat import TrajectoryFeature
 from sap.offline.payoff_net import PayoffNet
 import pandas as pd
 import json
+import json_repair
 
 
 class Planner(Agent):
@@ -231,6 +232,37 @@ class SAPVanilla(SAPAgent):
         if obs.time % self.strategy_interval == 0:
             self.update_strategy(obs)
         return self.planner.step(obs)
+
+
+class SAPCoT(Agent):
+    def __init__(self, player_id, model, temperature, max_tokens, map_name):
+        import sap.templates.sap_distill_cot as template
+
+        super().__init__(model, temperature, max_tokens)
+        self.player_id = player_id
+        self.map_name = map_name
+        self.sys = template.SYS
+        self.usr = template.USR
+    
+    def step(self, obs: GameState, traj: Trajectory | None):
+        usr = self.usr.format(
+            trajectory=TrajectoryFeature(traj).to_string() if traj else "",
+            observation=obs.to_string(),
+            player_id=self.player_id
+        )
+
+        messages = [
+            {"role": "system", "content": self.sys},
+            {"role": "user", "content": usr}
+        ]
+
+        response = self.client(messages=messages)
+        response = json_repair.loads(response)
+        logger.debug(f"System Prompt: {self.sys}")
+        logger.debug(f"User Prompt: {usr}")
+        logger.debug(f"Response: {response}")
+        plan = response.get("Plan") or response.get("plan") or "START OF TASK\nEND OF TASK"
+        return plan
 
 
 class NoGreedyAce(SAPAgent):

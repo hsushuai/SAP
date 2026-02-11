@@ -4,6 +4,11 @@ from matplotlib import pyplot as plt
 from matplotlib.ticker import PercentFormatter
 from skill_rts.agents import bot_ais
 
+# 设置绘图风格与中文字体
+plt.rcParams['font.sans-serif'] = ['Noto Sans CJK SC', 'WenQuanYi Micro Hei', 'DejaVu Sans']
+plt.rcParams['axes.unicode_minus'] = False  # 解决负号显示为方块的问题
+plt.rcParams.update({"font.size": 16}) # 将所有字体设为 14 号
+
 
 def get_ace_result(runs_dir):
     results = {}
@@ -71,7 +76,7 @@ def plot():
         # "randomAI",
     ]
     n_rows, n_cols = 4, 3
-    plt.rcParams.update({"font.size": 17})
+    # plt.rcParams.update({"font.size": 17})
     fig, axes = plt.subplots(n_rows, n_cols, figsize=(10, 14), sharex=True, sharey=True)
 
     colors = ["#d86c50", "#0ac9bf", "#a39aef"]
@@ -87,20 +92,21 @@ def plot():
 
         x_pos = [0, 1, 2]
         
-        ax.bar([x - bar_width for x in x_pos], ace_result, color=colors[0], width=bar_width, align="center", label="SAP", edgecolor="black", hatch="/")
+        ax.bar([x - bar_width for x in x_pos], ace_result, color=colors[0], width=bar_width, align="center", label="SAP-OM", edgecolor="black", hatch="/")
         ax.bar([x for x in x_pos], gridnet_result, color=colors[1], width=bar_width, align="center", label="GridNet", edgecolor="black", hatch="\\")
         ax.bar([x + bar_width for x in x_pos], transformer_result, color=colors[2], width=bar_width, align="center", label="Transformer", edgecolor="black", hatch="x")
         
         ax.set_title(var_name)
         ax.set_xticks(x_pos)
-        ax.set_xticklabels(["loss", "tie", "win"])
+        ax.set_xticklabels(["获胜", "平局", "失败"])
         ax.yaxis.set_major_formatter(PercentFormatter(1))
     
     plt.legend()
     fig.tight_layout()
-    fig.savefig("sap/experiments/plots/against_bots.pdf")
+    fig.savefig("sap/experiments/plots/against_bots_cn.pdf")
 
 
 if __name__ =="__main__":
     os.environ["QT_QPA_PLATFORM"] = "offscreen"
-    plot()
+    # plot()
+    print(get_ace_result("runs/eval_ace"))

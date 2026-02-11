@@ -4,6 +4,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 from collections import defaultdict
+import matplotlib.font_manager as fm
 
 
 STRATEGY1 = "## Strategy\n- Economic Feature: 2\n- Barracks Feature: resource >= 8\n- Military Feature: Range and Worker\n- Aggression Feature: True\n- Attack Feature: Unit\n- Defense Feature: None\n\n"
@@ -16,6 +17,9 @@ SKILLS = [
     "[Attack Enemy]"
 ]
 
+# 设置绘图风格与中文字体
+plt.rcParams['font.sans-serif'] = ['Noto Sans CJK SC', 'WenQuanYi Micro Hei', 'DejaVu Sans']
+plt.rcParams['axes.unicode_minus'] = False  # 解决负号显示为方块的问题
 
 def find_all_runs(run_dir):
     result_dirs = []
@@ -108,6 +112,64 @@ def plot_strategy_boxplot(json_path, output_path):
     plt.tight_layout()
     plt.savefig(output_path, dpi=300)
 
+def plot_strategy_boxplot_cn(json_path, output_path):
+    # --- 关键修复：直接指定字体文件路径 ---
+    # 这里选择你 fc-list 输出中的 NotoSansCJK-Regular
+    font_path = '/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc'
+    zh_font = fm.FontProperties(fname=font_path, size=16)
+    
+    # 1. 加载数据
+    with open(json_path) as f:
+        data = json.load(f)
+    
+    # 2. 数据清洗
+    all_records = []
+    for strategy_name, time_steps in data.items():
+        for step in time_steps:
+            for action_name, value in step.items():
+                all_records.append({
+                    "Strategy": strategy_name,
+                    "Action": action_name.replace('[', '').replace(']', ''),
+                    "Percentage": value
+                })
+    
+    df = pd.DataFrame(all_records)
+    
+    # 3. 绘图
+    colors = ["#d86c50", "#0ac9bf", "#a39aef", "#f4cc71"]
+    plt.figure(figsize=(10, 8))
+    sns.set_theme(style="white")
+    
+    ax = sns.boxplot(
+        data=df, 
+        x="Action", 
+        y="Percentage", 
+        hue="Strategy",
+        palette=colors,
+        width=0.5,
+        fliersize=2,
+        linewidth=1.2
+    )
+    
+    # 4. 图表细节美化 - 关键点：手动将字体应用到所有文本
+    # 设置图例字体
+    plt.legend(loc='upper left', prop=zh_font, fontsize=16)
+    
+    ax.set_xlabel(None)
+    ax.set_ylabel(None)
+    
+    # 设置坐标轴刻度字体
+    for label in ax.get_xticklabels():
+        label.set_fontproperties(zh_font)
+        label.set_fontsize(16)
+        
+    for label in ax.get_yticklabels():
+        label.set_fontproperties(zh_font)
+        label.set_fontsize(16)
+    
+    plt.tight_layout()
+    plt.savefig(output_path, dpi=300)
+    print(f"图像已保存至: {output_path}")
 
 def merge_result(filenames, output_path):
     data = {}
@@ -136,4 +198,4 @@ if __name__ == "__main__":
 
     result_path = "sap/experiments/plots/plan_dist.json"
     output_path = "sap/experiments/plots/plan_dist.pdf"
-    plot_strategy_boxplot(result_path, output_path)
+    plot_strategy_boxplot_cn(result_path, output_path)

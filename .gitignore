@@ -46,8 +46,7 @@ output/
 # data files
 # data/
 # results/
-distill-sap/data/*.jsonl
-distill-sap/data/data-*
+distill-sap/data/
 
 # others
 TODO.md

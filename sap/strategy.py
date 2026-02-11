@@ -50,20 +50,21 @@ class Strategy:
     def _parse_feats(self):
         self.economic = re.search(r'.*?Economic Feature.*?: (\w+)', self.strategy).group(1)
         self.barracks = re.search(r'.*?Barracks Feature.*?: ([^\(\#]*)', self.strategy).group(1)
-        self.military = re.search(r'.*?Military Feature.*?: ([^\(\#]*)', self.strategy).group(1)
+        self.military = re.search(r'.*?Military Feature.*?: ([^\(\#\n\r]*)', self.strategy).group(1)
         self.aggression = re.search(r'.*?Aggression Feature.*?: (\w+)', self.strategy).group(1)
         self.attack = re.search(r'.*?Attack Feature.*?: (\w+)', self.strategy).group(1)
         self.defense = re.search(r'.*?Defense Feature.*?: (\w+)', self.strategy).group(1)
 
         self.economic = int(self.economic)
-        if "False" in self.barracks:
+        if "False" in self.barracks or "None" in self.barracks or not self.barracks:
             self.barracks = False
         else:
             self.barracks = float(re.search(r'resource\s*>=\s*(\d+)', self.barracks).group(1))
         self.aggression = eval(self.aggression)
         if not self.aggression:
             self.attack = None
-        self.defense = eval(self.defense)
+        defense_map = {"Close": "1", "Medium": "2", "Far": "3", "Very Far": "4"}
+        self.defense = eval(defense_map.get(self.defense, self.defense))
 
     
     def encode(self) -> np.ndarray:
@@ -243,10 +244,27 @@ class Strategy:
 
 
 if __name__ == "__main__":
-    feat_space = Strategy.feat_space()
-    print(feat_space.shape)
-    print(feat_space[-1])
-    strategy = Strategy.decode(feat_space[-1])
-    print(strategy.strategy)
-    strategy = Strategy(strategy.strategy, "")
-    print(strategy.feats)
+    # feat_space = Strategy.feat_space()
+    # print(feat_space.shape)
+    # print(feat_space[-1])
+    # strategy = Strategy.decode(feat_space[-1])
+    # print(strategy.strategy)
+    # strategy = Strategy(strategy.strategy, "")
+    # print(strategy.feats)
+    s = """\
+## Strategy
+- Economic Feature: 1
+- Barracks Feature: None
+- Military Feature: Worker
+- Aggression Feature: True
+- Attack Feature: Building
+- Defense Feature: None
+
+### Explanation:
+- **Economic Feature**: Player 1 has 1 worker, which corresponds to the feature space {1, 2}.
+- **Barracks Feature**: Player 1 has no barracks, so the feature is set to None.
+- **Military Feature**: Player 1 has only workers, so the feature is set to Worker.
+- **Aggression Feature**: Player 1 is attacking the base of Player 0, indicating an aggressive strategy.
+- **Attack Feature**: Player 1 is attacking the base, so the feature is set to Building.
+- **Defense Feature**: There is no defensive positioning information provided, so the feature is set to None."""
+    print(Strategy(s).feats)

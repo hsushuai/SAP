@@ -62,7 +62,7 @@ class Qwen(LLM):
         if model == "Qwen2.5-72B-Instruct":
             self.client = OpenAI(base_url="http://10.7.0.210:8010/v1", api_key="")
         else:
-            self.client = OpenAI(base_url="http://10.7.0.210:8020/v1", api_key="")
+            self.client = OpenAI(base_url="http://10.7.0.210:8010/v1", api_key="")
 
 
 class GLM(LLM):
@@ -156,5 +156,5 @@ def call_llm(
 
 
 if __name__ == "__main__":
-    llm = LLMs("Qwen2.5-72B-Instruct", max_tokens=4096)
+    llm = LLMs("SAP-Distill-V3-Qwen2.5-3B", max_tokens=4096)
     print(llm("你是谁"))

@@ -253,7 +253,6 @@ def train_model():
     plt.savefig("results/confusion_matrix_16x16.png", dpi=300)
 
 
-
 if __name__ == "__main__":
     prepare_data()
     train_model()  # 0.7944 (8x8), 0.8278 (16x16)

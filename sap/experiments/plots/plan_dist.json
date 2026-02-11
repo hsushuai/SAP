@@ -1,5 +1,5 @@
 {
-    "strategy1 w/ hints": [
+    "策略1 有提示": [
         {
             "[Harvest Mineral]": 0.06896551724137931,
             "[Produce Unit]": 0.27586206896551724,
@@ -239,7 +239,7 @@
             "[Attack Enemy]": 0.6666666666666666
         }
     ],
-    "strategy1 w/o hints": [
+    "策略1 无提示": [
         {
             "[Harvest Mineral]": 0.06451612903225806,
             "[Produce Unit]": 0.3870967741935484,
@@ -507,7 +507,7 @@
             "[Attack Enemy]": 0.2857142857142857
         }
     ],
-    "strategy2 w/ hints": [
+    "策略2 有提示": [
         {
             "[Harvest Mineral]": 0.3333333333333333,
             "[Produce Unit]": 0.3333333333333333,
@@ -957,7 +957,7 @@
             "[Attack Enemy]": 0.0
         }
     ],
-    "strategy2 w/o hints": [
+    "策略2 无提示": [
         {
             "[Harvest Mineral]": 0.037037037037037035,
             "[Produce Unit]": 0.2222222222222222,

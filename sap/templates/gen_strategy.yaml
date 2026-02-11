@@ -130,6 +130,13 @@ OBS: |
 
   You are now **player {player_id}**. Please create a counterstrategy to win the game based on the current situation. Output only the strategy in the specified format, without any extra content.
 
+OBS_STRATEGY: |
+  # Opponent Strategy
+  Here is the description of the **Opponent Strategy**: 
+  {0pponent}
+
+  You are now **player {player_id}**. Please create a counterstrategy to win the game based on the current situation. Output only the strategy in the specified format, without any extra content.
+
 
 FORMAT_INSTRUCTION: |
   You must generate a counterstrategy that includes all the features of a Parameterized Strategy. The strategy is wrapped in `<strategy></strategy>`, as shown below:
@@ -148,3 +155,10 @@ ZERO_SHOT_WO_TIPS: |
   ${STRATEGY_SPACE}
   ${FORMAT_INSTRUCTION}
   ${OBS}
+
+SAPAgentWithoutSEN: |
+  ${INSTRUCTION}
+  ${MANUAL}
+  ${STRATEGY_SPACE}
+  ${FORMAT_INSTRUCTION}
+  ${OBS_STRATEGY}

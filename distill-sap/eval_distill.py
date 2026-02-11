@@ -2,90 +2,29 @@ import argparse
 from omegaconf import OmegaConf
 import json
 from skill_rts.envs import MicroRTSLLMEnv
-from sap.agent  import Planner, SAPAgent
-from skill_rts.agents import bot_ais, VanillaAgent, CoTAgent, PLAPAgent
+from sap.agent import Planner, SAPVanilla, SAPAgent, SAPAgentWithoutSEN, SAPCoT
+from skill_rts.agents import bot_ais
 from skill_rts import logger
+import traceback
 import time
 
 
-llm_based_baselines = {
-    "Vanilla": VanillaAgent,
-    "CoT": CoTAgent,
-    "PLAP": PLAPAgent
-}
-
-
-def parse_args():
-
-    cfg = OmegaConf.load("distill-sap/configs/sap_distill.yaml")
-
-    parser = argparse.ArgumentParser()
-    parser.add_argument("--map_path", type=str, help="Path to the map file")
-    parser.add_argument("--max_steps", type=int, help="Maximum steps for the environment")
-    parser.add_argument("--model", type=str, help="Model name")
-    parser.add_argument("--temperature", type=float, help="Temperature for LLM")
-    parser.add_argument("--max_tokens", type=int, help="Maximum tokens for LLM")
-    parser.add_argument("--num_generations", type=int, help="Number of generations for LLM")
-    parser.add_argument("--opponent", type=str, help="Strategy for opponent")
-    parser.add_argument("--interval", type=int, help="Interval for update plan")
-    parser.add_argument("--episodes", type=int, default=10, help="Number of episodes to run")
-
-    args = parser.parse_args()
-
-    if args.map_path is not None:
-        cfg.env.map_path = args.map_path
-    if args.model is not None:
-        cfg.agents[0].model = args.model
-        cfg.agents[1].model = args.model
-    if args.temperature is not None:
-        cfg.agents[0].temperature = args.temperature
-        cfg.agents[1].temperature = args.temperature
-    if args.max_tokens is not None:
-        cfg.agents[0].max_tokens = args.max_tokens
-        cfg.agents[1].max_tokens = args.max_tokens
-    if args.opponent is not None:
-        cfg.agents[1].strategy = args.opponent
-    if args.interval is not None:
-        cfg.env.interval = args.interval
-    if args.max_steps is not None:
-        cfg.env.max_steps = args.max_steps
-    if args.episodes is not None:
-        cfg.episodes = args.episodes
-    
-    return cfg
-
-
-def main():
+def run(opponent):
     # Initialize
-    cfg = parse_args()
-    map_name = cfg.env.map_path.split("/")[-1].split(".")[0]
-
-    if cfg.agents[1].strategy in bot_ais:
-        opponent_agent = bot_ais[cfg.agents[1].strategy]
-        opponent_name = cfg.agents[1].strategy
-    elif "json" in cfg.agents[1].strategy:
-        opponent_agent = Planner(**cfg.agents[1], player_id=1, map_name=map_name)
-        opponent_name = cfg.agents[1].strategy.split('/')[-1].split('.')[0]
-    elif cfg.agents[1].strategy in llm_based_baselines:
-        opponent_agent = llm_based_baselines[cfg.agents[1].strategy](
-            cfg.agents[1].model,
-            cfg.agents[1].temperature,
-            cfg.agents[1].max_tokens,
-            player_id=1
-        )
-        opponent_name = cfg.agents[1].strategy
-    else:
-        raise ValueError(f"Unknown opponent strategy: {cfg.agents[1].strategy}")
+    cfg = OmegaConf.load("sap/configs/sap.yaml")
     
-    runs_dir = f"runs/sap_distill/{opponent_name}"
+    runs_dir = f"runs/eval-SAP-Distill/SAP-Distill-V2-Qwen2.5-32B/{opponent['name']}"
     logger.set_level(logger.DEBUG)
 
-    agent = SAPAgent(player_id=0, map_name=map_name, **cfg.agents[0])
-    env = MicroRTSLLMEnv([agent, opponent_agent], **cfg.env)
-    # reviewer = Reviewer(**cfg.agents[0])
+    model_cfg0 = {"model": "SAP-Distill-V2-Qwen2.5-32B", "temperature": 0, "max_tokens": 2048}
+    # agent0 = SAPAgent(player_id=0, prompt="zero-shot-w-strategy", map_name="basesWorkers8x8", strategy_interval=200, **model_cfg0)
+    agent0 = Planner(player_id=0, prompt="zero-shot", map_name="basesWorkers8x8", **model_cfg0)
+    # agent0 = SAPCoT(player_id=0, map_name="basesWorkers8x8", **model_cfg0)
+    # env = MicroRTSLLMEnv([agent, opponent["agent"]], **cfg.env)
+    env = MicroRTSLLMEnv([agent0, opponent["agent"]], **cfg.env)
     
     # Run the episodes
-    for episode in range(cfg.episodes):
+    for episode in range(3):
         run_dir = f"{runs_dir}/run_{episode}"
         env.set_dir(run_dir)
         start_time = time.time()
@@ -94,18 +33,8 @@ def main():
         except Exception as e:
             print(f"Error in episode {episode}: {e}")
             env.close()
+            traceback.print_exc()
             continue
-        
-        # Post-match review
-        # if payoffs[0] < payoffs[1]:
-        #     for d in env.plans:
-        #         player = d["players"][0]
-        #         reviewer.reflect_planner(player["strategy"], player["obs"], player["plan"])
-        #     reviewer.reflect_meta_strategy(trajectory)
-        #     env.agents[0].meta_strategy = reviewer.meta_strategy
-        #     env.agents[0].planner.tips = reviewer.planner_tips
-        # else:
-        #     reviewer.recognize_strategy(trajectory)
 
         # Save the results
         OmegaConf.save(cfg, f"{run_dir}/config.yaml")
@@ -113,8 +42,23 @@ def main():
         env.metric.to_json(f"{run_dir}/metric.json")
         with open(f"{run_dir}/plans.json", "w") as f:
             json.dump(env.plans, f, indent=4)
-        print(f"Match {episode} | Opponent {opponent_name} | Payoffs: {payoffs} | Runtime: {(time.time() - start_time) / 60:.2f}min, {env.time}steps")
+        print(f"Match {episode} | {runs_dir} | Payoffs: {payoffs} | Runtime: {(time.time() - start_time) / 60:.2f}min, {env.time}steps")
 
 
 if __name__ == "__main__":
-    main()
+    import os
+
+    baseline_model_cfg = {"model": "Qwen2.5-72B-Instruct", "temperature": 0, "max_tokens": 4096}
+    # opponents = [
+    #     # {"name": "Vanilla", "agent": VanillaAgent(player_id=1, **baseline_model_cfg)},
+    #     # {"name": "CoT", "agent": CoTAgent(player_id=1, **baseline_model_cfg)},
+    #     # {"name": "PLAP", "agent": PLAPAgent(player_id=1, **baseline_model_cfg)},
+    #     {"name": "SAP-Gen", "agent": SAPVanilla(prompt="zero-shot-w-strategy", player_id=1, map_name="basesWorkers16x16", strategy_interval=200, **baseline_model_cfg)},
+    #     {"name": "SAP-OM-wo_SEN", "agent": SAPAgentWithoutSEN(prompt="zero-shot-w-strategy", player_id=1, map_name="basesWorkers16x16", strategy_interval=200, **baseline_model_cfg)},
+    #     # {"name": "ExpertStrategy", "agent": Planner(prompt="zero-shot-w-strategy", player_id=1, map_name="basesWorkers8x8", strategy="sap/data/expert_strategy.json", **baseline_model_cfg)}
+    # ]
+    opponents = []
+    for name, bot in bot_ais.items():
+        opponents.append({"name": name, "agent": bot})
+    for opponent in opponents:
+        run(opponent)

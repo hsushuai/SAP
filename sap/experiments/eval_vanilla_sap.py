@@ -2,7 +2,7 @@ import argparse
 from omegaconf import OmegaConf
 import json
 from skill_rts.envs import MicroRTSLLMEnv
-from sap.agent import Planner, SAPVanilla
+from sap.agent import Planner, SAPVanilla, SAPAgent, SAPAgentWithoutSEN
 from skill_rts.agents import bot_ais, VanillaAgent, CoTAgent, PLAPAgent
 from skill_rts import logger
 import traceback
@@ -51,24 +51,22 @@ def parse_args():
     return cfg
 
 
-def run():
+def run(opponent):
     # Initialize
     cfg = parse_args()
-    map_name = cfg.env.map_path.split("/")[-1].split(".")[0]
+    cfg.env.map_path = "maps/16x16/basesWorkers16x16.xml"
     
-    runs_dir = "runs/eval_scling_law/7b_vs_3b"
+    runs_dir = f"runs/eval-16x16/{opponent['name']}"
     logger.set_level(logger.DEBUG)
 
-    model_cfg0 = {"model": "Qwen2.5-7B-Instruct", "temperature": 0, "max_tokens": 4096}
-    model_cfg1 = {"model": "Qwen2.5-3B-Instruct", "temperature": 0, "max_tokens": 4096}
-    agent0 = SAPVanilla(player_id=0, map_name=map_name, prompt="zero-shot-w-strategy", strategy_interval=200, **model_cfg0)
-    agent1 = SAPVanilla(player_id=1, map_name=map_name, prompt="zero-shot-w-strategy", strategy_interval=200, **model_cfg1)
-    # agent = Planner(prompt="zero-shot-w-strategy", player_id=0, map_name="basesWorkers8x8", strategy="sap/data/expert_strategy2.json", **model_cfg)
+    model_cfg0 = {"model": "Qwen2.5-72B-Instruct", "temperature": 0, "max_tokens": 4096}
+    agent0 = SAPAgent(player_id=0, prompt="zero-shot-w-strategy", map_name="basesWorkers16x16", strategy_interval=200, **model_cfg0)
+    # agent1 = Planner(prompt="zero-shot-w-strategy", player_id=0, map_name="basesWorkers8x8", strategy="sap/data/expert_strategy2.json", **model_cfg)
     # env = MicroRTSLLMEnv([agent, opponent["agent"]], **cfg.env)
-    env = MicroRTSLLMEnv([agent0, agent1], **cfg.env)
+    env = MicroRTSLLMEnv([agent0, opponent["agent"]], **cfg.env)
     
     # Run the episodes
-    for episode in range(cfg.episodes):
+    for episode in range(3):
         run_dir = f"{runs_dir}/run_{episode}"
         env.set_dir(run_dir)
         start_time = time.time()
@@ -90,11 +88,16 @@ def run():
 
 
 if __name__ == "__main__":
-    # baseline_model_cfg = {"model": "Qwen2.5-72B-Instruct", "temperature": 0, "max_tokens": 4096}
-    # opponents = [
-    #     {"name": "Vanilla", "agent": VanillaAgent(player_id=1, **baseline_model_cfg)},
-    #     {"name": "CoT", "agent": CoTAgent(player_id=1, **baseline_model_cfg)},
-    #     {"name": "PLAP", "agent": PLAPAgent(player_id=1, **baseline_model_cfg)},
-    #     {"name": "ExpertStrategy", "agent": Planner(prompt="zero-shot-w-strategy", player_id=1, map_name="basesWorkers8x8", strategy="sap/data/expert_strategy.json", **baseline_model_cfg)}
-    # ]
-    run()
+    import os
+
+    baseline_model_cfg = {"model": "Qwen2.5-72B-Instruct", "temperature": 0, "max_tokens": 4096}
+    opponents = [
+        # {"name": "Vanilla", "agent": VanillaAgent(player_id=1, **baseline_model_cfg)},
+        # {"name": "CoT", "agent": CoTAgent(player_id=1, **baseline_model_cfg)},
+        # {"name": "PLAP", "agent": PLAPAgent(player_id=1, **baseline_model_cfg)},
+        {"name": "SAP-Gen", "agent": SAPVanilla(prompt="zero-shot-w-strategy", player_id=1, map_name="basesWorkers16x16", strategy_interval=200, **baseline_model_cfg)},
+        {"name": "SAP-OM-wo_SEN", "agent": SAPAgentWithoutSEN(prompt="zero-shot-w-strategy", player_id=1, map_name="basesWorkers16x16", strategy_interval=200, **baseline_model_cfg)},
+        # {"name": "ExpertStrategy", "agent": Planner(prompt="zero-shot-w-strategy", player_id=1, map_name="basesWorkers8x8", strategy="sap/data/expert_strategy.json", **baseline_model_cfg)}
+    ]
+    for opponent in opponents:
+        run(opponent)

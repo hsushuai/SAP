@@ -6,9 +6,12 @@ from tqdm.rich import tqdm
 from skill_rts.game import Trajectory
 import matplotlib.patches as mpatches
 
+# 设置绘图风格与中文字体
+plt.rcParams['font.sans-serif'] = ['Noto Sans CJK SC', 'WenQuanYi Micro Hei', 'DejaVu Sans']
+plt.rcParams['axes.unicode_minus'] = False  # 解决负号显示为方块的问题
 os.environ["QT_QPA_PLATFORM"] = "offscreen"
 plt.rcParams.update({"font.size": 17})
-actions = ["attack", "harvest", "return", "produce"]
+actions = ["攻击", "采集", "返回", "制造"]
 
 def get_action_distribution():
     data = {
@@ -90,7 +93,7 @@ def plot():
     legend_patches = [mpatches.Patch(facecolor=colors[i], label=method, edgecolor="black") for i, method in enumerate(methods)]
     plt.legend(handles=legend_patches, loc="upper right")
 
-    plt.ylabel("Action Distribution")
+    plt.ylabel("")
     # plt.yticks(np.arange(0, 120, 20))
     plt.xticks(ticks=range(1, len(actions) + 1), labels=actions)
     
@@ -178,7 +181,7 @@ def plot_metric():
     plt.legend(loc="upper right")
 
     # Label axes and set ticks
-    plt.ylabel("Metric")
+    plt.ylabel("")
     plt.xticks(ticks=x, labels=metrics)
 
     plt.tight_layout()
@@ -189,4 +192,4 @@ if __name__ == "__main__":
     # get_action_distribution()
     plot()
     # get_metric_data()
-    plot_metric()
+    # plot_metric()
